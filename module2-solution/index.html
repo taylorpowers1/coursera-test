@@ -1,94 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" type="text/html" href="css/stle.css">
-<style>
-
-/*********** Base styles **********/
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-h1 {
-	margin-bottom: 15px;
-}
-
-section {
-	border: 1px solid black;
-	width: 90%;
-	height: 150px;
-	background-color: #A52A2A;
-	margin-left: 10px;
-	margin-right: 10px;
-	font-family: Helvetica;
-	color: white;
-}
-
-/******** simple Responsive Framework *********/
-.row {
-	width: 100%;
-}
-
-/*********** Desktop *******/
-@media (min-width: 992px) {
-	.col-lg-1, .col-lg-2, .col-lg-3 {
-		float: left;
-	}
-	.col-lg-1 {
-		width: 33.33%
-
-	}
-	.col-lg-2 {
-		width: 33.33%
-	}
-
-	.col-lg-3 {
-		width: 33.33%
-	}
-	
-}
-
-/*********** Tablet *******/
-@media (min-width: 768px) and (max-width: 991px) {
-	.col-md-1, .col-md-2, .col-md-3 {
-	}
-	.col-md-1, .col-md-2 {
-		width: 50%;
-		float: left;
-	}
-	.col-md-3 {
-		width: 100%;
-		clear: left;
-		margin-top: 10px;
-	}
-	
-}
-
-/*********** Mobile *******/
-@media (max-width: 767px) {
-	.col-sm-1, .col-sm-2, .col-sm-3 {
-		clear: both;
-	}
-}
-
-</style>
+	<meta charset="utf-8">
+	<title>Our Menu</title>
+	<link rel="stylesheet" type="text/html" href="css/style.css">
 </head>
+
 <body>
 	<h1>What's on the Menu?</h1>
-
 <div class="row">
-	<section class="col-lg-1 col-md-1 col-sm-1" id="div1">
-		<p>Section 1</p>	
-	</section>
-	<section class="col-lg-2 col-md-2 col-sm-2" id="div2">
-		<p>Section 2</p>
-	</section>
-	<section class="col-lg-3 col-md-3 col-sm-3" id="div3">
-		<p>Section 3</p>
-	</section>
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class="section" id="div1">
+			<div class="section-heading" id="sec1">
+				<h2>Chicken</h2>
+			</div>
+			<p id="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sapien est. Nunc non finibus erat, nec laoreet justo. In suscipit ultrices est sed malesuada. Duis nec metus risus.</p>	
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class="section" id="div2">
+			<div class="section-heading" id="sec2">
+				<h2>Beef</h2>
+			</div>
+			<p id="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sapien est. Nunc non finibus erat, nec laoreet justo. In suscipit ultrices est sed malesuada. Duis nec metus risus.</p>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-12 col-sm-12" id="div3">
+		<div class="section"">
+			<div class="section-heading" id="sec3">
+				<h2>Sushi</h2>
+			</div>
+			<p id="para3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sapien est. Nunc non finibus erat, nec laoreet justo. In suscipit ultrices est sed malesuada. Duis nec metus risus.</p>
+		</div>
+	</div>
 </div>
 
 </body>
